@@ -1,0 +1,264 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*1 rem = 10px*/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  width: 100%;
+}
+
+/* GLOBALES */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+.contenido {
+  display: flex;
+  justify-content: center;
+}
+.contenido-imagen {
+  background-image: url(/img/fotos-toyota.png);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 60rem;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+img {
+  width: 120px;
+}
+/* UTILIDADES */
+.fw-300 {
+  font-weight: bold;
+}
+.centrar-texto {
+  text-align: center;
+}
+.no-margin {
+  margin: 0;
+}
+.desaparecer {
+  display: none !important;
+}
+/* HEADER */
+.site-header {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+.contenido-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .contenido-header {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+}
+
+/* NAVEGACION */
+.navegacion {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+@media only screen and (min-width: 768px) {
+  .navegacion {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.2rem;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .navegacion a {
+    display: inline-block;
+  }
+}
+.menu img {
+  width: 5rem;
+}
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+.mostrar {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+/* FORMULARIO */
+
+.formulario ul,
+.formulario label {
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+input:not([type="submit"]) {
+  padding: 1rem;
+  display: block;
+  width: 97%;
+  background-color: silver;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 0;
+  margin: 1rem;
+}
+.formulario-radio {
+  max-width: 50rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+input[type="radio"] {
+  margin: 0 4rem;
+  width: auto;
+}
+input > img {
+  width: 50px !important;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+}
+/* Botones */
+.bg-green {
+  background-color: green;
+}
+
+.bg-negro {
+  background-color: black;
+}
+.bg-rojo {
+  background-color: red;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.btn {
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+.btn i {
+  padding: 0.7rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* TABLA */
+.spinner {
+  display: flex;
+  align-items: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+}
+th {
+  background-color: coral;
+  text-transform: uppercase;
+}
+tr {
+  transition: background-color 0.25s;
+}
+tr:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: #fff;
+}
+th,
+td {
+  padding: 0.1rem;
+}
+table,
+th,
+td {
+  border: 0.1rem solid black;
+  margin-bottom: 0 2rem;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: cornflowerblue;
+  padding: 1rem;
+}
+.contenido-footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenido-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.copyright {
+  color: azure;
+  margin: 1rem;
+}

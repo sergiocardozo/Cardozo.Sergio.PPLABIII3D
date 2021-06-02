@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/scripts.js" type="module" defer></script>
+    <script src="https://kit.fontawesome.com/524839ad54.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/index.html">
+                    <img src="./img/logoAuto.png" alt="">
+                </a>
+                <div class="menu">
+                    <img src="./img/barras.svg" alt="Barras">
+                </div>
+                <nav class="navegacion">
+                    <a href="#">Nosotros</a>
+                    <a href="#">Anuncios</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="no-margin centrar-texto fw-300">Administración</h1>
+    <div class="contenido-imagen">
+    </div>
+
+    <main class="contenedor">
+        <section id="dataIn">
+            <form id="frmPrincipal" class="formulario">
+                <fieldset>
+                    <legend>Informacion Del Anuncio</legend>
+
+                    <label class="desaparecer" for="txtId" id="labelId">Id</label>
+                    <input class="desaparecer" type="text" name="id" id="txtId" disabled>
+
+                    <label for="txtTitulo">Titulo: </label>
+                    <input type="text" name="titulo" placeholder="Titulo" id="txtTitulo" required>
+
+
+                    <label for="transaccion">Transacción:</label>
+
+                    <div class="formulario-radio">
+                        <label for="radButV">Venta</label>
+                        <input type="radio" name="transaccion" id="radButV" value="Venta" checked>
+
+                        <label for="radButA">Alquiler</label>
+                        <input type="radio" name="transaccion" id="radButA" value="Alquiler" checked>
+
+                    </div>
+
+
+                    <label for="txtDescripcion">Descripción:</label>
+                    <input type="text" name="descripcion" placeholder="Descripción" id="txtDescripcion" required>
+
+                    <label for="txtPrecio">Precio:</label>
+                    <input type="number" name="precio" placeholder="Precio" id="txtPrecio" required>
+                    <div class="flex">
+                        <img src="./img/two_cars_icon_177210.ico" alt=""><input type="number" name="puertas"
+                            placeholder="Puertas" id="txtPuertas" required>
+
+                        <img src="./img/speedometer_4969.ico" alt=""><input type="number" name="km" placeholder="KMs"
+                            id="txtKms" required>
+
+                        <img src="./img/motor_4528.ico" alt="icono motor" width="16px"><input type="number"
+                            name="potencia" placeholder="Potencia" id="txtPotencia" required>
+
+                    </div>
+
+
+                </fieldset>
+                <div class="botones">
+                    <button class="btn bg-green" value="Guardar" id="btnAlta"><i
+                            class="far fa-save"></i>Guardar</button>
+                    <button class="btn bg-green desaparecer" value="desaparecer" id="btnModificar">Modificar</button>
+                    <button class="btn bg-rojo desaparecer" value="desaparecer" id="btnEliminar">Eliminar</button>
+                    <button class="btn bg-negro" value="Cancelar bg-negro" id="btnCancelar">Cancelar</button>
+
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+    <section class="contenedor contenido">
+        <div id="divTabla">
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="contenedor">
+            <div class="contenido-footer">
+                <nav class="navegacion">
+                    <a href="#">Nosotros</a>
+                    <a href="#">Anuncios</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contacto</a>
+                </nav>
+
+                <p class="copyright">Todos los Derechos Reservados 2021 &copy;</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
